@@ -12,7 +12,9 @@ class CardList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-        scrollDirection: Axis.horizontal, children: getChaildrenCards(context));
+        shrinkWrap: true,
+        scrollDirection: Axis.horizontal,
+        children: getChaildrenCards(context));
   }
 
   List<Widget> getChaildrenCards(context) {
